@@ -1,14 +1,20 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Accordian } from "~/components/accordian";
+import { Autocomplete } from "~/components/autocomplete";
 import { Dialog } from "~/components/dialog";
+import { Meter } from "~/components/meter";
 
 export default component$(() => {
   return (
-    <div>
+    <div class="container">
       <Dialog />
       <hr />
       <Accordian />
+      <hr />
+      <Autocomplete />
+      <hr />
+      <Meter />
     </div>
   );
 });
